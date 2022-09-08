@@ -2,5 +2,8 @@
 
 ## Usage 
 
-npm i 
+npm i
+
+</br>
+
 npm install
