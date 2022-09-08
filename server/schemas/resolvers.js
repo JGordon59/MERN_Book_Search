@@ -1,6 +1,4 @@
-// import user model
 const { User } = require('../models');
-// import sign token function from auth
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -10,7 +8,6 @@ const resolvers = {
         }
     },
     Mutation: {
-        // create a user, sign a token, and send it back (to client/src/components/SignUpForm.js)
         createUser: async (parent, { username, email, password }) => {
             return await User.create({ username, email, password });
         },
